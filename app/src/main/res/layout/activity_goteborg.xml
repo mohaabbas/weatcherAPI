@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_kir"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    tools:context="com.example.moha.weatherapp.Goteborg">
+
+    <TextView
+        android:id="@+id/cityNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="CITY, NAME"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/weatherIconView"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/icon_na"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/cityNameView"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/conditionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONDITION"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_below="@+id/weatherIconView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:id="@+id/temperatureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="00 C"
+        android:textColor="@android:color/background_light"
+        android:textSize="80sp"
+        android:layout_below="@+id/conditionView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
